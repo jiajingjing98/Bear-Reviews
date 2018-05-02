@@ -9,10 +9,6 @@ target 'RottenProfessors' do
 
 pod 'Firebase/Core'
 pod 'FirebaseAuth'
-pod 'FirebaseStorage'
-pod 'SDWebImage'
-pod 'MBProgressHUD'
-pod 'SDWebImage'
 pod 'FirebaseDatabase'
 
   target 'RottenProfessorsTests' do

@@ -9,7 +9,6 @@
 import UIKit
 import FirebaseDatabase
 import Foundation
-import FirebaseStorage
 
 class WriteReviewViewController: UIViewController, UITextViewDelegate {
     var kindnessstatus: Int?
