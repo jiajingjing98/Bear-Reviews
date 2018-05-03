@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -453,7 +452,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6U-O2-V6R" userLabel="Percentage">
-                                <rect key="frame" x="290" y="328" width="80" height="41"/>
+                                <rect key="frame" x="274" y="328" width="80" height="41"/>
                                 <color key="backgroundColor" red="0.82745098039999998" green="0.36078431370000003" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="Fda-yu-E1k"/>
@@ -497,21 +496,21 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TiA-2p-9aK">
-                                <rect key="frame" x="233" y="326" width="45" height="45"/>
+                                <rect key="frame" x="217" y="326" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7eP-fW-UfZ"/>
                                     <constraint firstAttribute="width" constant="45" id="HSp-90-Ie8"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDm-vY-SFP">
-                                <rect key="frame" x="42" y="333.5" width="165" height="31.5"/>
+                                <rect key="frame" x="26" y="333.5" width="165" height="31.5"/>
                                 <color key="backgroundColor" red="0.74901960784313726" green="0.60392156862745094" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews Counted:  0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6in-5y-DJK">
-                                <rect key="frame" x="42" y="390" width="195" height="28"/>
+                                <rect key="frame" x="26" y="390" width="195" height="28"/>
                                 <color key="backgroundColor" red="0.74901960784313726" green="0.60392156862745094" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -521,6 +520,7 @@
                         <color key="backgroundColor" red="0.83921568627450982" green="0.77647058823529413" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6in-5y-DJK" firstAttribute="leading" secondItem="qDm-vY-SFP" secondAttribute="leading" id="0JP-Qi-ndI"/>
                             <constraint firstItem="D1b-ML-Fuz" firstAttribute="leading" secondItem="2Nc-Qc-Feq" secondAttribute="leading" constant="50" id="9mw-ZZ-92p"/>
                             <constraint firstItem="TiA-2p-9aK" firstAttribute="leading" secondItem="qDm-vY-SFP" secondAttribute="trailing" constant="26" id="C9a-sS-Rtd"/>
                             <constraint firstItem="3WX-ow-Icl" firstAttribute="centerX" secondItem="8LT-lt-BOA" secondAttribute="centerX" id="CBX-Va-LZ2"/>
@@ -537,7 +537,6 @@
                             <constraint firstItem="hFW-gP-ndR" firstAttribute="leading" secondItem="2Nc-Qc-Feq" secondAttribute="leading" constant="34" id="SI8-dl-chH"/>
                             <constraint firstItem="8LT-lt-BOA" firstAttribute="top" secondItem="6in-5y-DJK" secondAttribute="bottom" constant="29" id="TCW-aO-UaA"/>
                             <constraint firstItem="eaC-x1-2FK" firstAttribute="leading" secondItem="2Nc-Qc-Feq" secondAttribute="leading" constant="92" id="Tjd-gy-rCS"/>
-                            <constraint firstItem="6in-5y-DJK" firstAttribute="leading" secondItem="2Nc-Qc-Feq" secondAttribute="leading" constant="42" id="UQr-A1-dFD"/>
                             <constraint firstItem="oHi-ax-Bnu" firstAttribute="centerY" secondItem="3WX-ow-Icl" secondAttribute="centerY" id="VAd-gy-Coh"/>
                             <constraint firstItem="oHi-ax-Bnu" firstAttribute="centerX" secondItem="hYr-h0-OuO" secondAttribute="centerX" id="WKV-20-xlO"/>
                             <constraint firstItem="D1b-ML-Fuz" firstAttribute="centerY" secondItem="ADD-00-cQh" secondAttribute="centerY" id="Xpb-Ca-N1f"/>
@@ -556,7 +555,7 @@
                             <constraint firstItem="eaC-x1-2FK" firstAttribute="centerX" secondItem="xhi-i1-pp5" secondAttribute="centerX" id="nK3-2O-fDV"/>
                             <constraint firstItem="8LT-lt-BOA" firstAttribute="centerX" secondItem="2Nc-Qc-Feq" secondAttribute="centerX" id="qbh-8y-In9"/>
                             <constraint firstItem="TiA-2p-9aK" firstAttribute="centerY" secondItem="qDm-vY-SFP" secondAttribute="centerY" id="reZ-xm-ELc"/>
-                            <constraint firstItem="qDm-vY-SFP" firstAttribute="leading" secondItem="2Nc-Qc-Feq" secondAttribute="leading" constant="42" id="y7H-mH-j6S"/>
+                            <constraint firstItem="qDm-vY-SFP" firstAttribute="leading" secondItem="2Nc-Qc-Feq" secondAttribute="leading" constant="26" id="y7H-mH-j6S"/>
                             <constraint firstItem="eaC-x1-2FK" firstAttribute="top" secondItem="xhi-i1-pp5" secondAttribute="bottom" constant="12" id="zcE-nm-ziH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Nc-Qc-Feq"/>
