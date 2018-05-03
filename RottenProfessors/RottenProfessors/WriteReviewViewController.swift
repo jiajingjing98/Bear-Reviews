@@ -104,11 +104,11 @@ class WriteReviewViewController: UIViewController, UITextViewDelegate {
         overallstatus = 0
     }
     
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if textView == self.reviewTextView {
-            self.opreview = true
-        }
-    }
+//    func textViewDidEndEditing(_ textView: UITextView) {
+//        if textView == self.reviewTextView {
+//            self.opreview = true
+//        }
+//    }
     
     @IBAction func submitPressed(_ sender: Any) {
         if kindnessstatus == nil || wisdomstatus == nil || overallstatus == nil || passionstatus == nil {
@@ -168,15 +168,28 @@ class WriteReviewViewController: UIViewController, UITextViewDelegate {
                 }
             }
             
-            
-            
-          
         }
         
-        
-  
-        
-        
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        animateViewMoving(up: true, moveValue: 250)
+    }
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView == self.reviewTextView {
+            self.opreview = true
+        }
+        animateViewMoving(up: false, moveValue: 250)
+    }
+    
+    func animateViewMoving (up:Bool, moveValue :CGFloat){
+        let movementDuration:TimeInterval = 0.3
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations( "animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
+        UIView.commitAnimations()
     }
     
     
@@ -187,11 +200,22 @@ class WriteReviewViewController: UIViewController, UITextViewDelegate {
         reviewTextView.layer.borderWidth = 2
         reviewTextView.layer.borderColor = UIColor.gray.cgColor
         definesPresentationContext = true
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let donebutton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
+        
+        toolbar.setItems([donebutton], animated: false)
+        
+        reviewTextView.inputAccessoryView = toolbar
         
 
         // Do any additional setup after loading the view.
     }
-
+    
+    @objc func doneClicked() {
+        reviewTextView.endEditing(true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
