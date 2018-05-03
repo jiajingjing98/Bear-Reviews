@@ -452,7 +452,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6U-O2-V6R" userLabel="Percentage">
-                                <rect key="frame" x="253.5" y="328" width="80" height="41"/>
+                                <rect key="frame" x="259.5" y="328" width="80" height="41"/>
                                 <color key="backgroundColor" red="0.82745098039999998" green="0.36078431370000003" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="Fda-yu-E1k"/>
@@ -463,10 +463,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1b-ML-Fuz">
-                                <rect key="frame" x="50" y="569" width="90" height="90"/>
+                                <rect key="frame" x="50" y="584" width="75" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="FIT-pl-ZPP"/>
-                                    <constraint firstAttribute="width" constant="90" id="Zyi-DU-Pgx"/>
+                                    <constraint firstAttribute="height" constant="75" id="FIT-pl-ZPP"/>
+                                    <constraint firstAttribute="width" constant="75" id="Zyi-DU-Pgx"/>
                                 </constraints>
                                 <state key="normal" image="book"/>
                                 <connections>
@@ -485,10 +485,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADD-00-cQh">
-                                <rect key="frame" x="260" y="582" width="64" height="64"/>
+                                <rect key="frame" x="271" y="595" width="53" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Iq4-qR-n4j"/>
-                                    <constraint firstAttribute="width" constant="64" id="Nkk-k2-Oas"/>
+                                    <constraint firstAttribute="height" constant="53" id="Iq4-qR-n4j"/>
+                                    <constraint firstAttribute="width" constant="53" id="Nkk-k2-Oas"/>
                                 </constraints>
                                 <state key="normal" image="pencil"/>
                                 <connections>
@@ -496,21 +496,21 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TiA-2p-9aK">
-                                <rect key="frame" x="196.5" y="326" width="45" height="45"/>
+                                <rect key="frame" x="202.5" y="326" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7eP-fW-UfZ"/>
                                     <constraint firstAttribute="width" constant="45" id="HSp-90-Ie8"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDm-vY-SFP">
-                                <rect key="frame" x="26" y="335" width="144.5" height="27.5"/>
+                                <rect key="frame" x="32" y="335" width="144.5" height="27.5"/>
                                 <color key="backgroundColor" red="0.74901960784313726" green="0.60392156862745094" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews Counted:  0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6in-5y-DJK">
-                                <rect key="frame" x="26" y="387.5" width="185.5" height="26"/>
+                                <rect key="frame" x="32" y="387.5" width="185.5" height="26"/>
                                 <color key="backgroundColor" red="0.74901960784313726" green="0.60392156862745094" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -554,7 +554,7 @@
                             <constraint firstItem="eaC-x1-2FK" firstAttribute="centerX" secondItem="xhi-i1-pp5" secondAttribute="centerX" id="nK3-2O-fDV"/>
                             <constraint firstItem="8LT-lt-BOA" firstAttribute="centerX" secondItem="2Nc-Qc-Feq" secondAttribute="centerX" id="qbh-8y-In9"/>
                             <constraint firstItem="TiA-2p-9aK" firstAttribute="centerY" secondItem="qDm-vY-SFP" secondAttribute="centerY" id="reZ-xm-ELc"/>
-                            <constraint firstItem="qDm-vY-SFP" firstAttribute="leading" secondItem="2Nc-Qc-Feq" secondAttribute="leading" constant="26" id="y7H-mH-j6S"/>
+                            <constraint firstItem="qDm-vY-SFP" firstAttribute="leading" secondItem="2Nc-Qc-Feq" secondAttribute="leading" constant="32" id="y7H-mH-j6S"/>
                             <constraint firstItem="eaC-x1-2FK" firstAttribute="top" secondItem="xhi-i1-pp5" secondAttribute="bottom" constant="12" id="zcE-nm-ziH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Nc-Qc-Feq"/>
