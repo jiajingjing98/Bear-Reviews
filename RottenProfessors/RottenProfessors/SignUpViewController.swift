@@ -23,6 +23,16 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
         self.passwordVeriTextField.delegate = self
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let donebutton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
+        
+        toolbar.setItems([donebutton], animated: false)
+        
+        emailTextField.inputAccessoryView = toolbar
+        usernameTextField.inputAccessoryView = toolbar
+        passwordTextField.inputAccessoryView = toolbar
+        passwordVeriTextField.inputAccessoryView = toolbar
 
         // Do any additional setup after loading the view.
     }
@@ -113,8 +123,32 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 self.userVeriPassword = textField.text!
             }
         }
+        animateViewMoving(up: false, moveValue: 150)
+        if textField == self.passwordVeriTextField {
+            animateViewMoving(up: false, moveValue: 70)
+        }
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        animateViewMoving(up: true, moveValue: 150)
+        if textField == self.passwordVeriTextField {
+            animateViewMoving(up: true, moveValue: 70)
+        }
+    }
+    
+    func animateViewMoving (up:Bool, moveValue :CGFloat){
+        let movementDuration:TimeInterval = 0.3
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations( "animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
+        UIView.commitAnimations()
+    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
+    }
     
     
     /*

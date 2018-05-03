@@ -23,8 +23,20 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let donebutton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
+        
+        toolbar.setItems([donebutton], animated: false)
+        
+        emailTextField.inputAccessoryView = toolbar
+        passwordTextField.inputAccessoryView = toolbar
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
