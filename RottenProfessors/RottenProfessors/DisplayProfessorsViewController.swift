@@ -42,6 +42,11 @@ class DisplayProfessorsViewController: UIViewController, UICollectionViewDelegat
         }
         cell.profName.text = name
         
+        if name == "TEST" {
+            cell.profPic.image = #imageLiteral(resourceName: "testpic")
+            return cell
+        }
+        
         
         
         if let image = cachedImages[name] {

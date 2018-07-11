@@ -191,6 +191,7 @@ class FacultyList {
                                                 "Yi Ma": "yima",
                                                 "Ren Ng": "yirenng",
                                                 "Yun S. Song": "yssong",
-                                                "Avideh Zakhor": "zakhor"]
+                                                "Avideh Zakhor": "zakhor",
+                                                "TEST": "test"]
 }
 
